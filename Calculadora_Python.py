@@ -28,8 +28,8 @@ Las opciones son:\n \
 6. Cociente entre dos números. \n \
 7. Exponente de un número elevado a otro número. \n \
 8. Calculadora de áreas de cuadrados para 'n' números pares. \n \
+9. Calculadora de áreas de círculos para 'n' números pares. \n \
 10. Salir. \n \
-
 Introduce el número para la operación que quieras realizar: "))
 
 if Calculadora == 1:
@@ -82,6 +82,14 @@ elif Calculadora == 8:
     for i in range (1, (x*2+1)):
         if y <= x and i % 2 == 0:
             print(f"El área del cuadrado numero {y} para lado con valor", i, "es de", i**2, "metros cuadrados.")
+            y= y+1
+            
+elif Calculadora == 9:
+    y = 1
+    x = int(input("Introduce la cantidad de números pares que que quieres que aparezcan en la operación: "))
+    for i in range (1, (x*2+1)):
+        if y <= x and i % 2 == 0:
+            print(f"El área del círculo numero {y} para radio valor", i, "es de", 3.14 * (i**2), "metros cuadrados.")
             y= y+1
     
     
