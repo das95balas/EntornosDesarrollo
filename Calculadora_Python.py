@@ -24,6 +24,8 @@ Las opciones son:\n \
 2. Resta de dos números.\n \
 3. Multiplicación de dos números.\n \
 4. División de dos números.\n \
+5. Módulo entre dos números. \n \
+6. Cociente entre dos números. \n \
 10. Salir. \n \
 Introduce el número para la operación que quieras realizar: "))
 
@@ -50,7 +52,22 @@ elif Calculadora == 4:
         Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales): "))
     print(f"El resultado de la división de {Num1} entre {Num2} es {Num1 / Num2}")
     
-
+elif Calculadora == 5:
+    Num1 = float(input("Has elegido el modo módulo de dos números. Elige el primer número (puede tener dos cifras decimales): "))
+    Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales): "))
+    while Num2 == 0:
+        print ("¡El segundo número no puede ser 0!")
+        Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales): "))
+    print(f"El resultado de calcular el módulo de {Num1} entre {Num2} es {Num1 % Num2}")
+    
+elif Calculadora == 6:
+    Num1 = float(input("Has elegido el modo cociente de dos números. Elige el primer número (puede tener dos cifras decimales): "))
+    Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales: "))
+    while Num2 == 0:
+        print ("¡El segundo número no puede ser 0!")
+        Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales): "))
+    print(f"El resultado de calcular el cociente de {Num1} entre {Num2} es {Num1 // Num2}")
+    
     
 elif Calculadora == 10:
     print ("Has seleccionado la opción salir. ¡Hasta luego!")
