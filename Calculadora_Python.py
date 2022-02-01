@@ -26,7 +26,10 @@ Las opciones son:\n \
 4. División de dos números.\n \
 5. Módulo entre dos números. \n \
 6. Cociente entre dos números. \n \
+7. Exponente de un número elevado a otro número. \n \
+8. Calculadora de áreas de cuadrados para 'n' números pares. \n \
 10. Salir. \n \
+
 Introduce el número para la operación que quieras realizar: "))
 
 if Calculadora == 1:
@@ -67,6 +70,19 @@ elif Calculadora == 6:
         print ("¡El segundo número no puede ser 0!")
         Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales): "))
     print(f"El resultado de calcular el cociente de {Num1} entre {Num2} es {Num1 // Num2}")
+
+elif Calculadora == 7:
+    Num1 = float(input("Has elegido el modo exponente entre dos números. Elige el primer número (puede tener dos cifras decimales): "))
+    Num2 = float(input("Elige ahora el segundo número (puede tener también dos decimales): "))
+    print(f"El resultado de elevar {Num1} a {Num2} es {Num1 ** Num2}")
+    
+elif Calculadora == 8:
+    y = 1
+    x = int(input("Introduce la cantidad de números pares que que quieres que aparezcan en la operación: "))
+    for i in range (1, (x*2+1)):
+        if y <= x and i % 2 == 0:
+            print(f"El área del cuadrado numero {y} para lado con valor", i, "es de", i**2, "metros cuadrados.")
+            y= y+1
     
     
 elif Calculadora == 10:
