@@ -32,6 +32,22 @@ Las opciones son:\n \
 10. Salir. \n \
 Introduce el número para la operación que quieras realizar: "))
 
+while Calculadora < 1 or Calculadora > 10:
+    
+    Calculadora = int(input("¡No tenemos ninguna opción asignada a ese número! \n \
+    Las opciones son:\n \
+    1. Suma de dos números.\n \
+    2. Resta de dos números.\n \
+    3. Multiplicación de dos números.\n \
+    4. División de dos números.\n \
+    5. Módulo entre dos números. \n \
+    6. Cociente entre dos números. \n \
+    7. Exponente de un número elevado a otro número. \n \
+    8. Calculadora de áreas de cuadrados para 'n' números pares. \n \
+    9. Calculadora de áreas de círculos para 'n' números pares. \n \
+    10. Salir. \n \
+    Introduce el número para la operación que quieras realizar: "))
+
 if Calculadora == 1:
     Num1 = float(input("Has elegido el modo suma de dos números. Elige el primer número (puede tener dos decimales): "))
     Num2 = float(input("Elige el segundo número (puede tener también dos decimales): "))
